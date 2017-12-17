@@ -1,15 +1,26 @@
 html, body {
   height: 100%;
+  background-color: #fdfd96;
 }
 
-body {
-  background-color: #fdfd96;
-  /* padding-top: 30px; */
+.header-wrapper {
+  height: 100%;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
 .header {
-  height: 100%;
-  background: gray;
+  padding-top: calc(30px + 5%);
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0px 30px;
+}
+
+.header img {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .navbar-wrapper {
