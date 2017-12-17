@@ -1,12 +1,24 @@
+/*
+  Color Palette:
+  * Dark Yellow: #e9da4d
+  * Pastel Yellow: #fdfd96
+  * Neutral White: #f2f3f5
+  * Pastel Blue: #a3d9e5
+  * Dark Blue: #60bbd0
+*/
+
 html, body {
   height: 100%;
-  background-color: #fdfd96;
 }
 
+/* HEADER */
 .header-wrapper {
   height: 100%;
+  min-height: 650px;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  background-color: #a3d9e5;
+  /* background-color: #fdfd96; */
 }
 
 .header {
@@ -14,8 +26,17 @@ html, body {
 }
 
 .header h1 {
+  font-size: 3.5em;
+  margin: 0px 30px;
+}
+
+.header h2 {
   font-size: 2.5em;
   margin: 0px 30px;
+}
+
+.header span {
+  color: #fdfd96;
 }
 
 .header img {
@@ -23,17 +44,30 @@ html, body {
   margin-bottom: 30px;
 }
 
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover {
+  color: #fdfd96;
+}
+
+.header i {
+  margin-top: 30px;
+}
+
+/* NAVBAR */
 .navbar-wrapper {
   height: 30px;
+  position: relative;
+  text-align: center;
 }
 
 .navbar {
-  overflow: hidden;
-  position: relative;
-  height: 30px;
-  text-align: center;
-  background-color: white;
   width: 100%;
+  overflow: hidden;
+  background-color: #f2f3f5;
 }
 
 .sticky {
@@ -41,18 +75,90 @@ html, body {
   top: 0;
 }
 
-.navbar a {
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.navbar li {
+  display: inline;
+  font-size: 16px;
+}
+
+.navbar li a {
+  margin: 0px;
+  padding: 0px 20px;
   line-height: 30px;
   display: inline-block;
   text-decoration: none;
+  color: #60bbd0;
+  font-family: sans-serif;
 }
 
+.navbar a:hover {
+  /* background-color: #fdfd96; */
+  background-color: #e9da4d;
+}
+
+/* CONTENT */
 .content-container {
   padding-top: 30px;
   width: 100%;
   height: 100%;
+  min-height: 650px;
+  background-color: #a3d9e5;
+  text-align: center;
 }
 
-.s1 {
-  background-color: orange;
+.content-body {
+  padding-top: calc(30px + 5%);
+}
+
+.content-body h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  color: white;
+  margin: 0px 30px;
+}
+
+.content-list {
+  font-family: sans-serif;
+  margin: 30px 30px 0px 30px;
+}
+
+.content-list-title {
+  font-size: 1.25em;
+}
+
+.content-list ul {
+  padding: 10px;
+  list-style-type: circle;
+  display: inline-block;
+  text-align: left;
+}
+
+.content-list li {
+  font-size: 1.0em;
+  margin: 5px 0;
+}
+
+.milk-bottle {
+  margin-top: 30px;
+	width: 10%;
+  max-width: 200px;
+	height: 10%;
+  max-height: 200px;
+}
+
+.mask-rect {
+	animation: fill 10s ease-in-out infinite;
+}
+
+@keyframes fill {
+	0% { height: 0; }
+	50% { height: 100%; }
+	100% { height: 0; }
 }
