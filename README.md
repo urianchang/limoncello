@@ -1,5 +1,3 @@
-# L'Cello
+# L'Cello: Homemade limoncello by Urian
 
 ![Logo](/static/img/limoncello.svg)
-
-## Homemade limoncello by Urian
