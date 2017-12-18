@@ -9,6 +9,7 @@
 
 html, body {
   height: 100%;
+  background-color: #a3d9e5;
 }
 
 /* HEADER */
@@ -145,6 +146,39 @@ html, body {
   margin: 5px 0;
 }
 
+.content-list span {
+  color: #fdfd96;
+  font-weight: bold;
+}
+
+/* CUSTOM CONTENT */
+.about-pic-wrapper {
+  /* width: 50%; */
+  display: inline-block;
+  margin: 30px 30px 0px 30px;
+}
+
+.about-pic {
+  width: 100%;
+  max-width: 300px;
+}
+
+.about-text-wrapper {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+  margin: 30px 30px 0px 30px;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.about-text-wrapper p {
+  margin-bottom: 20px;
+}
+
+/* BOTTLE FILL ANIMATION */
 .milk-bottle {
   margin-top: 30px;
 	width: 10%;
@@ -154,7 +188,7 @@ html, body {
 }
 
 .mask-rect {
-	animation: fill 10s ease-in-out infinite;
+	animation: fill 8s ease-in-out infinite;
 }
 
 @keyframes fill {
